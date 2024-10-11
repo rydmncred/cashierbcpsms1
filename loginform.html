@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Helvetica, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+
+        .left-side {
+            width: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .login-container {
+            margin-left: 275px;
+            margin-bottom: 250px;
+            margin-top: 250px;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            text-align: left;
+            color: #333;
+            margin-bottom: 35px;
+            font-size: 24px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+        .input-group input:focus {
+            border-color: #007bff;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #4e47e5;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-btn:hover {
+            background-color: #3E38B7;
+        }
+        .forgot-password {
+            text-align: right;
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+ 
+
+        .right-side {
+            width: 50%;
+            background-color: #1e3a8a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: left;
+            font-size: 24px;
+            padding: 40px;
+        }
+        .right-side-content {
+            max-width: 400px;
+            width: 100%;
+        }
+        .right-side-content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .admission a {
+            margin: 30px;
+            color: white;
+            text-decoration: none;
+        }
+        .admission a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-side">
+            <div class="login-container">
+                <img src="logoooo.png" height="140" style="margin-bottom: 20px;">
+                <h2>Sign In</h2>
+                <form action="loginform.php" method="post">
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <input type="submit" class="login-btn" value="Sign In">
+                </form>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right-side">
+            <div class="right-side-content">
+                <h1>STUDENT MANAGEMENT SYSTEM</h1>
+                <div class="admission">
+                    <p><a href="admission.html">Student admission click here </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
